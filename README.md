@@ -300,3 +300,7 @@ Project scope, naming, positioning, and maturity may change quickly as the ecosy
 ## License
 
 MIT
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/image?repos=clawhome/clawhome&type=date&legend=top-left)](https://www.star-history.com/?repos=clawhome%2Fclawhome&type=date&legend=top-left)
