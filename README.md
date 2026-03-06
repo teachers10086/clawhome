@@ -1,4 +1,4 @@
-# ClawHome / 龙虾之家
+# ClawHome
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-early-blue)
@@ -9,6 +9,24 @@ English | [中文](./README.zh-CN.md)
 A curated home for the Claw ecosystem — projects, comparisons, naming notes, and deployment guidance.
 
 > ClawHome is a curated directory of Claw-family open-source AI assistant projects on GitHub. It focuses on representative, ecosystem-shaping projects rather than claiming absolute completeness.
+
+---
+
+## Contents
+
+- [What is ClawHome?](#what-is-clawhome)
+- [Quick Start](#quick-start)
+- [Included Projects](#included-projects)
+- [Ecosystem Map](#ecosystem-map)
+- [Project Comparison](#project-comparison)
+- [Detailed Entries](#detailed-entries)
+- [Naming Confusion](#naming-confusion)
+- [Suggested Evaluation Dimensions](#suggested-evaluation-dimensions)
+- [Who is this repository for?](#who-is-this-repository-for)
+- [Contribution Guide](#contribution-guide)
+- [Roadmap](#roadmap)
+- [Disclaimer](#disclaimer)
+- [License](#license)
 
 ---
 
@@ -30,11 +48,11 @@ This repository helps readers quickly answer questions such as:
 
 If you are new to the Claw ecosystem:
 
-- Choose **OpenClaw** if you want the main self-hosted personal assistant experience.
-- Choose **LocalClaw** if you prefer local-first deployment with local model providers.
-- Choose **PicoClaw** if you want a lightweight, small-footprint assistant runtime.
-- Choose **MimiClaw** if you want an embedded assistant on low-cost hardware.
-- Explore **Mimiclaw** if you are interested in manager-worker or workforce-style multi-agent orchestration.
+- Choose **[OpenClaw](https://github.com/openclaw/openclaw)** if you want the main self-hosted personal assistant experience.
+- Choose **[LocalClaw](https://github.com/sulis-dev/localclaw)** if you prefer local-first deployment with local model providers.
+- Choose **[PicoClaw](https://github.com/sipeed/picoclaw)** if you want a lightweight, small-footprint assistant runtime.
+- Choose **[MimiClaw](https://github.com/memovai/mimiclaw)** if you want an embedded assistant on low-cost hardware.
+- Explore **[Mimiclaw](https://github.com/Mimiclaw)** if you are interested in manager-worker or workforce-style multi-agent orchestration.
 
 ---
 
@@ -42,11 +60,11 @@ If you are new to the Claw ecosystem:
 
 This repository currently focuses on the following representative projects:
 
-- OpenClaw
-- MimiClaw (`memovai/mimiclaw`)
-- PicoClaw
-- LocalClaw
-- Mimiclaw (organization / orchestration direction)
+- [OpenClaw](https://github.com/openclaw/openclaw)
+- [MimiClaw (`memovai/mimiclaw`)](https://github.com/memovai/mimiclaw)
+- [PicoClaw](https://github.com/sipeed/picoclaw)
+- [LocalClaw](https://github.com/sulis-dev/localclaw)
+- [Mimiclaw](https://github.com/Mimiclaw)
 
 As the ecosystem evolves, more projects, forks, registries, and infrastructure tools may be added.
 
@@ -57,15 +75,15 @@ As the ecosystem evolves, more projects, forks, registries, and infrastructure t
 ### A. Core assistant runtimes
 Projects whose primary goal is to provide an AI assistant runtime.
 
-- **OpenClaw** — the main self-hosted assistant platform
-- **LocalClaw** — a local-first variant built around local model workflows
-- **PicoClaw** — a lightweight runtime focused on small-footprint deployment
-- **MimiClaw** — an embedded implementation for constrained hardware
+- **[OpenClaw](https://github.com/openclaw/openclaw)** — the main self-hosted assistant platform
+- **[LocalClaw](https://github.com/sulis-dev/localclaw)** — a local-first variant built around local model workflows
+- **[PicoClaw](https://github.com/sipeed/picoclaw)** — a lightweight runtime focused on small-footprint deployment
+- **[MimiClaw](https://github.com/memovai/mimiclaw)** — an embedded implementation for constrained hardware
 
 ### B. Orchestration / organization layer
 Projects focused on agent teams, workforce-like execution, or manager-worker structures.
 
-- **Mimiclaw** — a direction centered on orchestrating multiple agents
+- **[Mimiclaw](https://github.com/Mimiclaw)** — a direction centered on orchestrating multiple agents
 
 ### C. Ecosystem infrastructure
 Future entries may include:
@@ -83,11 +101,11 @@ Future entries may include:
 
 | Project | Primary Role | Best For | Deployment Style | Main Characteristics | Maturity |
 |---|---|---|---|---|---|
-| OpenClaw | Core self-hosted personal assistant | General-purpose self-hosted AI assistant | Desktop / server / self-hosted | Multi-channel, extensible, central runtime | Active |
-| LocalClaw | Local-first assistant variant | Privacy-focused local usage | Local machine | Reduced cloud dependence, local models | Early-active |
-| PicoClaw | Lightweight assistant runtime | Edge and low-resource experiments | Lightweight hardware / edge | Small-footprint, fast, minimal | Early |
-| MimiClaw | Embedded assistant | Low-cost, low-power hardware assistant | Embedded device | ESP32-class direction, always-on hardware concept | Early |
-| Mimiclaw | Multi-agent orchestration direction | Workforce / manager-worker experiments | Multi-agent setup | Parallel agent execution, organizational abstraction | Experimental |
+| [OpenClaw](https://github.com/openclaw/openclaw) | Core self-hosted personal assistant | General-purpose self-hosted AI assistant | Desktop / server / self-hosted | Multi-channel, extensible, central runtime | Active |
+| [LocalClaw](https://github.com/sulis-dev/localclaw) | Local-first assistant variant | Privacy-focused local usage | Local machine | Reduced cloud dependence, local models | Early-active |
+| [PicoClaw](https://github.com/sipeed/picoclaw) | Lightweight assistant runtime | Edge and low-resource experiments | Lightweight hardware / edge | Small-footprint, fast, minimal | Early |
+| [MimiClaw](https://github.com/memovai/mimiclaw) | Embedded assistant | Low-cost, low-power hardware assistant | Embedded device | ESP32-class direction, always-on hardware concept | Early |
+| [Mimiclaw](https://github.com/Mimiclaw) | Multi-agent orchestration direction | Workforce / manager-worker experiments | Multi-agent setup | Parallel agent execution, organizational abstraction | Experimental |
 
 > Notes:
 > - “Maturity” here is a practical community-facing label, not an official upstream classification.
@@ -97,7 +115,7 @@ Future entries may include:
 
 ## Detailed Entries
 
-### 1) OpenClaw
+### 1) [OpenClaw](https://github.com/openclaw/openclaw)
 **Type:** Core runtime / self-hosted personal AI assistant
 
 **Best for:**
@@ -111,11 +129,11 @@ Future entries may include:
 - VPS / self-hosted server
 
 **Why it matters:**
-OpenClaw is the conceptual center of the Claw ecosystem. Many related projects can be understood as simplifications, specializations, or extensions of the OpenClaw idea.
+OpenClaw is one of the main reference points in the Claw ecosystem. Many related projects can be understood as simplifications, specializations, or extensions of the OpenClaw idea.
 
 ---
 
-### 2) LocalClaw
+### 2) [LocalClaw](https://github.com/sulis-dev/localclaw)
 **Type:** Local-first OpenClaw-style variant
 
 **Best for:**
@@ -129,11 +147,11 @@ OpenClaw is the conceptual center of the Claw ecosystem. Many related projects c
 - local LLM setups
 
 **Why it matters:**
-LocalClaw represents the “local-first” direction in the ecosystem. It is useful for users who want more control over data, context, and inference dependencies.
+LocalClaw represents the local-first direction in the ecosystem. It is useful for users who want more control over data, context, and inference dependencies.
 
 ---
 
-### 3) PicoClaw
+### 3) [PicoClaw](https://github.com/sipeed/picoclaw)
 **Type:** Lightweight Claw-style assistant
 
 **Best for:**
@@ -147,11 +165,11 @@ LocalClaw represents the “local-first” direction in the ecosystem. It is use
 - experimental environments
 
 **Why it matters:**
-PicoClaw represents the “small, fast, portable” direction of the ecosystem.
+PicoClaw represents the small, fast, and portable direction of the ecosystem.
 
 ---
 
-### 4) MimiClaw
+### 4) [MimiClaw](https://github.com/memovai/mimiclaw)
 **Repository naming note:** `memovai/mimiclaw`
 
 **Type:** Embedded assistant implementation
@@ -167,11 +185,11 @@ PicoClaw represents the “small, fast, portable” direction of the ecosystem.
 - experimental hardware assistants
 
 **Why it matters:**
-MimiClaw represents the hardware-native branch of the ecosystem.
+MimiClaw represents the hardware-oriented branch of the ecosystem.
 
 ---
 
-### 5) Mimiclaw
+### 5) [Mimiclaw](https://github.com/Mimiclaw)
 **Type:** Orchestration / workforce-style multi-agent direction
 
 **Best for:**
@@ -185,7 +203,7 @@ MimiClaw represents the hardware-native branch of the ecosystem.
 - task delegation workflows
 
 **Why it matters:**
-Mimiclaw represents the “AI organization” or “digital workforce” direction of the ecosystem.
+Mimiclaw represents the AI organization or digital workforce direction of the ecosystem.
 
 ---
 
@@ -195,10 +213,10 @@ One of the most confusing parts of the ecosystem is the name **Mimiclaw**.
 
 There are at least two different meanings people may refer to:
 
-### `memovai/mimiclaw`
+### [`memovai/mimiclaw`](https://github.com/memovai/mimiclaw)
 This repository is often introduced as **MimiClaw**, and is generally associated with the embedded / ESP32-style direction.
 
-### `Mimiclaw`
+### [Mimiclaw](https://github.com/Mimiclaw)
 This may also refer to a broader organization or orchestration direction related to multiple agents or workforce-like execution.
 
 For clarity, **ClawHome treats them as separate entries**.
